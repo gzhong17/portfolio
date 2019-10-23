@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import * as serviceWorker from './serviceWorker';
+import routes from './router';
+import './index.css';
 
-import { BrowserRouter } from "react-router-dom";
-import * as serviceWorker from "./serviceWorker";
-import routes from "./router";
-
-const rootEl = document.getElementById("root");
+const rootEl = document.getElementById('root');
 class Root extends Component {
   render() {
     return <BrowserRouter>{routes}</BrowserRouter>;

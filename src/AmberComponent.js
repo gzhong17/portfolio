@@ -59,6 +59,13 @@ exports.ParagraphText = BaseText.withComponent('p').extend`
     color: ${props => props.theme.primaryTextColor};
 `;
 
+exports.SecondaryHeader = BaseText.withComponent('p').extend`
+    margin:0;
+    margin-bottom: 16px;
+    font-size: 16pt;
+    font-family: ${props => props.theme.fonts.secondaryFont};
+    color: ${props => props.theme.primaryTextColor};
+`;
 exports.LabelText = BaseText.withComponent('p').extend`
     margin:0;
     margin-bottom: 16px;
