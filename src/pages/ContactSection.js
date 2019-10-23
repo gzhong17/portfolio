@@ -7,13 +7,14 @@ import {
   SecondaryHeader,
   LabelText
 } from 'AmberComponent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { IconButton, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import { Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
 import Icon from '@material-ui/core/Icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ContactSection extends Component {
   render() {
@@ -49,6 +50,13 @@ class ContactSection extends Component {
             >
               My Resume
             </Button>
+            <IconButton
+              onClick={() => {
+                window.open('https://www.linkedin.com/in/gloriazhong17/');
+              }}
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </IconButton>
           </ContentCol>
         </IntroContainer>
       </MainContainer>
