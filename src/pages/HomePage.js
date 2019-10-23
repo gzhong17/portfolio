@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import Header from 'Header';
-import { TitleHeader, ParagraphText } from 'AmberComponent';
-
+import { Base } from 'AmberComponent';
+import { HeroSection } from 'pages';
 class HomePage extends Component {
   render() {
     return (
-      <div>
+      <MainContainer>
         <Header pageName="home page" />
-        <TitleHeader>Gloria Zhong: Product Designer</TitleHeader>
-        <ParagraphText>
-          I’m a product designer, passionate about translating user data into
-          valuable solutions, through the lens of empathy and critical thinking.
-        </ParagraphText>
-      </div>
+        <HeroSection />
+      </MainContainer>
     );
   }
 }
+
+const MainContainer = Base.extend`
+  background-color: ${props => props.theme.whiteColor};
+  display: flex;
+  flex-direction: column;
+`;
 
 export default HomePage;
