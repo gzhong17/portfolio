@@ -8,7 +8,9 @@ import './index.css';
 const rootEl = document.getElementById('root');
 class Root extends Component {
   render() {
-    return <BrowserRouter>{routes}</BrowserRouter>;
+    return (
+      <BrowserRouter basename={process.env.PUBLIC_URL}>{routes}</BrowserRouter>
+    );
   }
 }
 
