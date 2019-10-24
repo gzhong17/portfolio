@@ -38,8 +38,9 @@ class HeroSection extends Component {
             <SecondaryHeader>See What I'm Working On Lately</SecondaryHeader>
           </ContentCol>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
+            <ArrowImg src={require('images/arrow.svg')} />
             {/* <IconButton color="primary"> */}
-            <ArrowDownwardIcon style={{ fill: 'primary' }} />
+            {/* <ArrowDownwardIcon style={{ fill: 'primary' }} /> */}
             {/* </IconButton> */}
           </ContentCol>
         </UpcomingContainer>
@@ -81,6 +82,9 @@ const ContentCol = Col.extend``;
 const PortraitImg = styled.img`
   margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
   width: ${props => (props.theme.isMobile ? '100%' : '400px')};
+`;
+const ArrowImg = styled.img`
+  width: ${props => (props.theme.isMobile ? '50px' : '50px')};
 `;
 
 const styles = theme => ({

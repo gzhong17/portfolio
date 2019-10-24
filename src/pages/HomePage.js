@@ -6,7 +6,7 @@ class HomePage extends Component {
   render() {
     return (
       <MainContainer>
-        <Header pageName="home page" />
+        <Header />
         <HeroSection />
         <ProjectSection />
         <ContactSection />
