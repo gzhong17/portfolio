@@ -71,6 +71,7 @@ const HeroParagraph = ParagraphText.extend`
   font-size: ${props => (props.theme.isMobile ? '16pt' : '20pt')};
   line-height: 120%;
 `;
+
 const HeroTitleHeader = TitleHeader.extend`
   font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
 `;

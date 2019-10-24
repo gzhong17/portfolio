@@ -22,13 +22,17 @@ class ProjectSection extends Component {
     return (
       <MainContainer>
         <IntroContainer>
-          <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <TitleHeader>Musers by MuseFind</TitleHeader>
+          <ContentCol lgOffset={1} lg={6} mdOffset={1} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers-sample.png')} />
+          </ContentCol>
+          <ContentCol lg={4} md={4} sm={12} xs={12}>
+            <SectionHeader>Musers by MuseFind</SectionHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
               Musers is an online influencer portfolio platform, where
               influencers can fully showcase their professionalism and value. I
-              led the user discovery, feedback, and design of this project.
+              led the <strong>user discovery, feedback, and design</strong> of
+              this project.
             </ParagraphText>
             <ParagraphText>
               <a href="http://musers.co" alt="Link to Musers website">
@@ -39,17 +43,14 @@ class ProjectSection extends Component {
               [My process is under construction, please visit soon!]
             </LabelText>
 
-            {/* <Button
+            <Button
               size="medium"
               onClick={() => {
                 history.push('/musers');
               }}
             >
               See My Process
-            </Button> */}
-          </ContentCol>
-          <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers-sample.png')} />
+            </Button>
           </ContentCol>
         </IntroContainer>
         {/* <UpcomingContainer>
@@ -75,11 +76,12 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
-  margin: ${props => (props.theme.isMobile ? '16px' : '36px')};
 `;
 const IntroContainer = Row.extend`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-top: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
 `;
 const UpcomingContainer = Base.extend`
@@ -87,6 +89,10 @@ const UpcomingContainer = Base.extend`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+`;
+
+const SectionHeader = TitleHeader.extend`
+  color: ${props => props.theme.primaryColor};
 `;
 
 const ContentCol = Col.extend``;

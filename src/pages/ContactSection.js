@@ -24,7 +24,7 @@ class ContactSection extends Component {
       <MainContainer>
         <IntroContainer>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <TitleHeader>I'm happy to chat!</TitleHeader>
+            <SectionHeader>I'm Happy To Chat!</SectionHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
               If you would like to see how I can make an impact with you or
@@ -81,6 +81,10 @@ const UpcomingContainer = Base.extend`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+`;
+
+const SectionHeader = TitleHeader.extend`
+  color: ${props => props.theme.primaryColor};
 `;
 
 const ContentCol = Col.extend``;

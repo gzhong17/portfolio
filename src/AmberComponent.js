@@ -56,6 +56,7 @@ exports.ParagraphText = BaseText.withComponent('p').extend`
     margin:0;
     margin-bottom: 16px;
     font-size: 12pt;
+    line-height: 120%;
     color: ${props => props.theme.primaryTextColor};
 `;
 
