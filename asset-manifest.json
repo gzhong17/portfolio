@@ -1,10 +1,10 @@
 {
-  "main.css": "/gzhong17/main.css",
-  "main.js": "/gzhong17/static/js/main.327821f5.js",
-  "main.css.map": "/gzhong17/main.css.map",
-  "main.js.map": "/gzhong17/static/js/main.327821f5.js.map",
-  "self-portrait-circle-mono.png": "/gzhong17/0c729546dee5d3a94a1fbbed9a8c387b.png",
-  "musers-sample.png": "/gzhong17/70441f8f1cc1252dc9d90b807921b2f0.png",
-  "logo.svg": "/gzhong17/b6fd7fd1f23f8c8a55031f28d8a28818.svg",
-  "index.html": "/gzhong17/index.html"
+  "main.css": "/portfolio/main.css",
+  "main.js": "/portfolio/static/js/main.b154854f.js",
+  "main.css.map": "/portfolio/main.css.map",
+  "main.js.map": "/portfolio/static/js/main.b154854f.js.map",
+  "self-portrait-circle-mono.png": "/portfolio/0c729546dee5d3a94a1fbbed9a8c387b.png",
+  "musers-sample.png": "/portfolio/70441f8f1cc1252dc9d90b807921b2f0.png",
+  "logo.svg": "/portfolio/b6fd7fd1f23f8c8a55031f28d8a28818.svg",
+  "index.html": "/portfolio/index.html"
 }
