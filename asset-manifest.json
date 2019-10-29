@@ -1,10 +1,11 @@
 {
-  "main.css": "/portfolio/main.css",
-  "main.js": "/portfolio/static/js/main.b154854f.js",
-  "main.css.map": "/portfolio/main.css.map",
-  "main.js.map": "/portfolio/static/js/main.b154854f.js.map",
-  "self-portrait-circle-mono.png": "/portfolio/0c729546dee5d3a94a1fbbed9a8c387b.png",
-  "musers-sample.png": "/portfolio/70441f8f1cc1252dc9d90b807921b2f0.png",
-  "logo.svg": "/portfolio/b6fd7fd1f23f8c8a55031f28d8a28818.svg",
-  "index.html": "/portfolio/index.html"
+  "main.css": "/main.css",
+  "main.js": "/static/js/main.43da7c96.js",
+  "main.css.map": "/main.css.map",
+  "main.js.map": "/static/js/main.43da7c96.js.map",
+  "self-portrait-circle-mono.png": "/0c729546dee5d3a94a1fbbed9a8c387b.png",
+  "musers-sample.png": "/70441f8f1cc1252dc9d90b807921b2f0.png",
+  "arrow.svg": "/8b9ef979e9a7c3b3901768b4175bc465.svg",
+  "logo.svg": "/b6fd7fd1f23f8c8a55031f28d8a28818.svg",
+  "index.html": "/index.html"
 }
