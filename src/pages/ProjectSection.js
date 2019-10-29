@@ -43,14 +43,14 @@ class ProjectSection extends Component {
               [My process is under construction, please visit soon!]
             </LabelText>
 
-            <Button
+            {/* <Button
               size="medium"
               onClick={() => {
                 history.push('/musers');
               }}
             >
               See My Process
-            </Button>
+            </Button> */}
           </ContentCol>
         </IntroContainer>
         {/* <UpcomingContainer>

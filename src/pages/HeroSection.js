@@ -21,10 +21,11 @@ class HeroSection extends Component {
         <IntroContainer>
           <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
             <HeroTitleHeader>Hi there, I'm Gloria</HeroTitleHeader>
+            <SubLabelText>Product Designer</SubLabelText>
             <HeroParagraph>
-              I’m a product designer, passionate about translating user data
-              into valuable solutions, through the lens of empathy and critical
-              thinking.
+              Working in UX for the past 6 years, I’ve been passionate about
+              translating user data into valuable solutions, through the lens of
+              empathy and critical thinking.
             </HeroParagraph>
           </ContentCol>
           <ContentCol lg={5} md={6} sm={12} xs={12}>
@@ -75,6 +76,11 @@ const HeroParagraph = ParagraphText.extend`
 
 const HeroTitleHeader = TitleHeader.extend`
   font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
+`;
+
+const SubLabelText = LabelText.extend`
+  font-size: ${props => (props.theme.isMobile ? '16pt' : '24pt')};
+  margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '24pt')};
 `;
 
 const ContentCol = Col.extend``;

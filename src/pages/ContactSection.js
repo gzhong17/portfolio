@@ -45,7 +45,7 @@ class ContactSection extends Component {
               className={classes.btn}
               size="medium"
               onClick={() => {
-                window.open('/documents/gzhong-resume-102319.pdf');
+                window.open('/documents/gzhong-resume-102919.pdf');
               }}
             >
               My Resume

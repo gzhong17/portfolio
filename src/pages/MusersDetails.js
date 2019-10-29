@@ -22,6 +22,7 @@ class MusersDetails extends Component {
     return (
       <MainContainer>
         <ProcessContainer>
+          <ContentCol></ContentCol>
           <SectionHeader>Musers by MuseFind</SectionHeader>
           {/* <LabelText>Influencer Online Portfolio</LabelText> */}
           <LabelText>About The Project</LabelText>
@@ -93,7 +94,16 @@ class MusersDetails extends Component {
             competitive analysis with our immediate competitors and 8 other
             platforms outside of my industry such as Fiverr, Upwork, POF, etc to
             find patterns of how the users communicated their value, experience
-            and services.
+            and services. I also analyzed 20+ media kits and compared the
+            layout, content, and design, in order to catch any patterns as I'm
+            figuring out how to standardize them while retaining key elements.
+          </ParagraphText>
+          <LabelText>Discovery #1</LabelText>
+          <ParagraphText>
+            1) [Credibility] Struggling to stand out due to IG algorithm changes
+            and market oversaturation 2) [Visual Appeal] To compensate,
+            influencers overwhelm themselves by working harder in order to be
+            seen
           </ParagraphText>
           <ParagraphText>
             I wanted to design a platform where influencers can show that
@@ -175,6 +185,8 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
+  padding-left: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
+  padding-right: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
 `;
 const ProcessContainer = Row.extend`
   display: flex;
