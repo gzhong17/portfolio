@@ -22,10 +22,10 @@ class ProjectSection extends Component {
     return (
       <MainContainer>
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} mdOffset={1} md={6} sm={12} xs={12}>
+          <ContentCol lgOffset={1} lg={6} md={12} sm={12} xs={12}>
             <ProjectImg src={require('images/musers-sample.png')} />
           </ContentCol>
-          <ContentCol lg={4} md={4} sm={12} xs={12}>
+          <ContentCol lg={4} md={12} sm={12} xs={12}>
             <SectionHeader>Musers by MuseFind</SectionHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
@@ -39,10 +39,20 @@ class ProjectSection extends Component {
                 Link to Platform
               </a>
             </ParagraphText>
-            <LabelText>
+            {/* <LabelText>
               [My process is under construction, please visit soon!]
-            </LabelText>
+            </LabelText> */}
 
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                window.open('/portfolio/documents/musers-process.pdf');
+              }}
+            >
+              See My Process
+            </Button>
             {/* <Button
               size="medium"
               onClick={() => {
