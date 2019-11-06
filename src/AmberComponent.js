@@ -48,29 +48,50 @@ const BaseText = (exports.BaseText = Base.withComponent('p').extend`
 exports.TitleHeader = BaseText.withComponent('h1').extend`
     margin:0;
     margin-bottom: 16px;
-    font-size: 24pt;
+    font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
     color: ${props => props.theme.primaryTextColor};
+    font-family: ${props => props.theme.fonts.primaryFont};
+    font-weight: ${props => props.theme.fonts.semiBold};
+`;
+
+exports.SectionHeader = BaseText.withComponent('h1').extend`
+    margin:0;
+    margin-bottom: 16px;
+    font-size:  ${props => (props.theme.isMobile ? '20pt' : '24pt')};
+    color: ${props => props.theme.primaryColor};
     font-family: ${props => props.theme.fonts.secondaryFont};
 `;
+exports.ProjectHeader = BaseText.withComponent('h1').extend`
+    margin:0;
+    margin-bottom: 16px;
+    font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
+    color: ${props => props.theme.primaryColor};
+    font-family: ${props => props.theme.fonts.secondaryFont};
+`;
+
 exports.ParagraphText = BaseText.withComponent('p').extend`
     margin:0;
     margin-bottom: 16px;
     font-size: 12pt;
-    line-height: 120%;
+    line-height: 160%;
     color: ${props => props.theme.primaryTextColor};
+    font-family: ${props => props.theme.fonts.primaryFont};
 `;
 
 exports.SecondaryHeader = BaseText.withComponent('p').extend`
     margin:0;
-    margin-bottom: 16px;
-    font-size: 16pt;
-    font-family: ${props => props.theme.fonts.secondaryFont};
+    margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '24pt')};
+    font-size: ${props => (props.theme.isMobile ? '16pt' : '20pt')};
+    font-family: ${props => props.theme.fonts.primaryFont};
+    text-transform: uppercase;
     color: ${props => props.theme.primaryTextColor};
 `;
 exports.LabelText = BaseText.withComponent('p').extend`
     margin:0;
-    margin-bottom: 16px;
-    font-size: 12pt;
-    font-family: ${props => props.theme.fonts.secondaryFont};
+    margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '16pt')};
+    font-size: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
+    font-weight: ${props => props.theme.fonts.semiBold};
+    font-family: ${props => props.theme.fonts.primaryFont};
+    text-transform: uppercase;
     color: ${props => props.theme.primaryTextColor};
 `;

@@ -4,8 +4,7 @@ import {
   Base,
   TitleHeader,
   ParagraphText,
-  SecondaryHeader,
-  LabelText
+  SectionHeader
 } from 'AmberComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -76,23 +75,8 @@ const IntroContainer = Base.extend`
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
   justify-content: center;
 `;
-const UpcomingContainer = Base.extend`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-`;
-
-const SectionHeader = TitleHeader.extend`
-  color: ${props => props.theme.primaryColor};
-`;
 
 const ContentCol = Col.extend``;
-
-const ProjectImg = styled.img`
-  margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
-  height: ${props => (props.theme.isMobile ? '600px' : '600px')};
-`;
 
 const styles = theme => ({
   btn: {

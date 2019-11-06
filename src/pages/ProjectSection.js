@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import {
-  Base,
-  TitleHeader,
-  ParagraphText,
-  SecondaryHeader,
-  LabelText
-} from 'AmberComponent';
+import { Base, ParagraphText, SectionHeader } from 'AmberComponent';
 import { IconButton, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
@@ -26,19 +20,24 @@ class ProjectSection extends Component {
             <ProjectImg src={require('images/musers-sample.png')} />
           </ContentCol>
           <ContentCol lg={4} md={12} sm={12} xs={12}>
-            <SectionHeader>Musers by MuseFind</SectionHeader>
+            <ProjectHeader>Musers by MuseFind</ProjectHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
               Musers is an online influencer portfolio platform, where
-              influencers can fully showcase their professionalism and value. I
-              led the <strong>user discovery, feedback, and design</strong> of
-              this project.
+              influencers can fully showcase their professionalism and value.
             </ParagraphText>
             <ParagraphText>
+              <ul>
+                <li>Product Management</li>
+                <li>UX Research</li>
+                <li>UX/UI Design</li>
+              </ul>
+            </ParagraphText>
+            {/* <ParagraphText>
               <a href="http://musers.co" alt="Link to Musers website">
                 Link to Platform
               </a>
-            </ParagraphText>
+            </ParagraphText> */}
             {/* <LabelText>
               [My process is under construction, please visit soon!]
             </LabelText> */}
@@ -53,6 +52,16 @@ class ProjectSection extends Component {
             >
               See My Process
             </Button>
+            <Button
+              className={classes.btn}
+              size="medium"
+              onClick={() => {
+                window.open('http://musers.co');
+              }}
+            >
+              See It In Action
+            </Button>
+
             {/* <Button
               size="medium"
               onClick={() => {
@@ -63,20 +72,6 @@ class ProjectSection extends Component {
             </Button> */}
           </ContentCol>
         </IntroContainer>
-        {/* <UpcomingContainer>
-          <ContentCol lg={12} md={12} sm={12} xs={12}>
-            <SecondaryHeader>
-              Want to continue this conversation?
-            </SecondaryHeader>
-          </ContentCol>
-          <ContentCol lg={12} md={12} sm={12} xs={12}>
-            <IconButton color="primary">
-            <ArrowDownwardIcon style={{ fill: 'primary' }} />
-            </IconButton>
-            <FontAwesomeIcon icon="linkedin" />
-            <Icon className="fa fa-plus-circle" color="primary" />
-          </ContentCol>
-        </UpcomingContainer> */}
       </MainContainer>
     );
   }
@@ -94,25 +89,23 @@ const IntroContainer = Row.extend`
   margin-top: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
 `;
-const UpcomingContainer = Base.extend`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-`;
-
-const SectionHeader = TitleHeader.extend`
-  color: ${props => props.theme.primaryColor};
-`;
 
 const ContentCol = Col.extend``;
 
-const ProjectImg = styled.img`
-  margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
-  width: ${props => (props.theme.isMobile ? '100%' : '600px')};
+const ProjectHeader = SectionHeader.extend`
+  font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
 `;
 
-const styles = theme => ({});
+const ProjectImg = styled.img`
+  margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+  max-width: ${props => (props.theme.isMobile ? '100%' : '520px')};
+`;
+
+const styles = theme => ({
+  btn: {
+    marginLeft: '12px'
+  }
+});
 
 export default withStyles(styles, { withTheme: true })(
   withRouter(ProjectSection)

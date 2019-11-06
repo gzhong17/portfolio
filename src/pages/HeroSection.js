@@ -20,8 +20,8 @@ class HeroSection extends Component {
       <MainContainer>
         <IntroContainer>
           <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
-            <HeroTitleHeader>Hi there, I'm Gloria</HeroTitleHeader>
-            <SubLabelText>Product Designer</SubLabelText>
+            <TitleHeader>Hi there, I'm Gloria</TitleHeader>
+            <SecondaryHeader>Product Designer</SecondaryHeader>
             <HeroParagraph>
               Working in UX for the past 6 years, I’ve been passionate about
               translating user data into valuable solutions, through the lens of
@@ -36,7 +36,7 @@ class HeroSection extends Component {
         </IntroContainer>
         <UpcomingContainer>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
-            <SecondaryHeader>See What I'm Working On Lately</SecondaryHeader>
+            <LabelText>See What I'm Working On Lately</LabelText>
           </ContentCol>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
             <ArrowImg src={require('images/arrow.svg')} />
@@ -70,17 +70,7 @@ const UpcomingContainer = Base.extend`
 `;
 
 const HeroParagraph = ParagraphText.extend`
-  font-size: ${props => (props.theme.isMobile ? '16pt' : '20pt')};
-  line-height: 120%;
-`;
-
-const HeroTitleHeader = TitleHeader.extend`
-  font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
-`;
-
-const SubLabelText = LabelText.extend`
-  font-size: ${props => (props.theme.isMobile ? '16pt' : '24pt')};
-  margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '24pt')};
+  font-size: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 
 const ContentCol = Col.extend``;

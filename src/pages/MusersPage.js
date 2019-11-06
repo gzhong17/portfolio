@@ -19,7 +19,7 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
-  padding: ${props => (props.theme.isMobile ? '16px' : '40px')};
+  margin: ${props => (props.theme.isMobile ? '16px' : '40px')};
 `;
 
 const styles = theme => ({});

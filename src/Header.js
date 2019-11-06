@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Base, TitleHeader } from 'AmberComponent';
+import { Base, SectionHeader } from 'AmberComponent';
 import styled from 'styled-components';
 import './App.css';
 
@@ -27,8 +27,7 @@ const LogoImg = styled.img`
   height: ${props => (props.theme.isMobile ? '40px' : '50px')};
 `;
 
-const MenuItem = TitleHeader.extend`
-  color: ${props => props.theme.primaryColor};
+const MenuItem = SectionHeader.extend`
   margin: 0;
 `;
 

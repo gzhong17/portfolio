@@ -1,8 +1,8 @@
 'use strict';
 
 const fonts = (exports.fonts = {
-  primaryFont: "'Roboto', sans-serif",
-  secondaryFont: "'Roboto Slab', sans-serif",
+  primaryFont: "'Raleway', sans-serif",
+  secondaryFont: "'Belleza', serif",
   regular: 300,
   semiBold: 600,
   bold: 700
