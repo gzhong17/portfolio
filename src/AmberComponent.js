@@ -89,9 +89,17 @@ exports.SecondaryHeader = BaseText.withComponent('p').extend`
 exports.LabelText = BaseText.withComponent('p').extend`
     margin:0;
     margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '16pt')};
-    font-size: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
+    font-size: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
     font-weight: ${props => props.theme.fonts.semiBold};
     font-family: ${props => props.theme.fonts.primaryFont};
     text-transform: uppercase;
+    color: ${props => props.theme.primaryTextColor};
+`;
+exports.ImgLabelText = BaseText.withComponent('p').extend`
+    margin:0;
+    margin-bottom: ${props => (props.theme.isMobile ? '16pt' : '16pt')};
+    font-size: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
+    font-weight: ${props => props.theme.fonts.semiBold};
+    font-family: ${props => props.theme.fonts.primaryFont};
     color: ${props => props.theme.primaryTextColor};
 `;
