@@ -598,10 +598,10 @@ class MusersDetails extends Component {
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ProjectImg src={require('images/musers/portfolio.png')} />
-            <ProjectImg src={require('images/musers/onboarding.png')} />
+            <ProjectImg src={require('images/musers/portfolio-details.png')} />
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/portfolio-details.png')} />
+            <ProjectImg src={require('images/musers/onboarding.png')} />
             <ProjectImg src={require('images/musers/website.png')} />
           </ContentCol>
         </SectionContainer>
