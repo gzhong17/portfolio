@@ -8,10 +8,10 @@ class Header extends Component {
     const { pageName, history } = this.props;
     return (
       <MainContainer>
-        <LinkText href="/">
+        <LinkText href="/portfolio/">
           <LogoImg src={require('images/logo.svg')} />
         </LinkText>
-        <LinkText href="/">
+        <LinkText href="/portfolio/">
           <MenuItem>Gloria Zhong</MenuItem>
         </LinkText>
       </MainContainer>
