@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import { Base, SectionHeader } from 'AmberComponent';
+import { Base, SectionHeader, LinkText } from 'AmberComponent';
 import styled from 'styled-components';
 import './App.css';
 
 class Header extends Component {
   render() {
-    const { pageName } = this.props;
+    const { pageName, history } = this.props;
     return (
       <MainContainer>
-        <LogoImg src={require('images/logo.svg')} />
-        <MenuItem>Gloria Zhong</MenuItem>
+        <LinkText href="/">
+          <LogoImg src={require('images/logo.svg')} />
+        </LinkText>
+        <LinkText href="/">
+          <MenuItem>Gloria Zhong</MenuItem>
+        </LinkText>
       </MainContainer>
     );
   }

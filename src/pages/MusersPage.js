@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from 'Header';
 import { withStyles } from '@material-ui/core/styles';
 import { Base } from 'AmberComponent';
-import { MusersDetails } from 'pages';
+import { MusersDetails, ContactSection } from 'pages';
 
 class MusersPage extends Component {
   render() {
@@ -10,6 +10,7 @@ class MusersPage extends Component {
       <MainContainer>
         <Header />
         <MusersDetails />
+        <ContactSection />
       </MainContainer>
     );
   }

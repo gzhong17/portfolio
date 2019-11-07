@@ -50,6 +50,7 @@ class ContactSection extends Component {
               My Resume
             </Button>
             <IconButton
+              className={classes.btn}
               onClick={() => {
                 window.open('https://www.linkedin.com/in/gloriazhong17/');
               }}
@@ -67,7 +68,7 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
-  margin: ${props => (props.theme.isMobile ? '16px' : '36px')};
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 const IntroContainer = Base.extend`
   display: flex;

@@ -16,10 +16,10 @@ class ProjectSection extends Component {
     return (
       <MainContainer>
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} md={12} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers-sample.png')} />
+          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/musers-sample.png')} />
           </ContentCol>
-          <ContentCol lg={4} md={12} sm={12} xs={12}>
+          <ContentCol lg={4} md={5} sm={11} xs={12}>
             <ProjectHeader>Musers by MuseFind</ProjectHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
@@ -81,6 +81,7 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 const IntroContainer = Row.extend`
   display: flex;
@@ -90,14 +91,16 @@ const IntroContainer = Row.extend`
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
 `;
 
-const ContentCol = Col.extend``;
+const ContentCol = Col.extend`
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
+`;
 
 const ProjectHeader = SectionHeader.extend`
   font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
 `;
 
 const ProjectImg = styled.img`
-  margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+  margin-left: ${props => (props.theme.isMobile ? '0' : '24pt')};
   max-width: ${props => (props.theme.isMobile ? '100%' : '520px')};
 `;
 

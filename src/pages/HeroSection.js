@@ -54,6 +54,7 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 const IntroContainer = Row.extend`
   display: flex;
@@ -73,10 +74,12 @@ const HeroParagraph = ParagraphText.extend`
   font-size: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 
-const ContentCol = Col.extend``;
+const ContentCol = Col.extend`
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
+`;
 
 const PortraitImg = styled.img`
-  margin-left: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+  margin-left: ${props => (props.theme.isMobile ? '0' : '24pt')};
   width: ${props => (props.theme.isMobile ? '100%' : '400px')};
 `;
 const ArrowImg = styled.img`
