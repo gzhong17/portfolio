@@ -10,6 +10,11 @@ import Icon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProjectSection extends Component {
+  // componentDidUpdate(prevProps) {
+  //   if (this.props.location !== prevProps.location) {
+  //     window.scrollTo(0, 0);
+  //   }
+  // }
   render() {
     const { classes, history } = this.props;
 
@@ -42,12 +47,22 @@ class ProjectSection extends Component {
               [My process is under construction, please visit soon!]
             </LabelText> */}
 
-            <Button
+            {/* <Button
               size="medium"
               variant="outlined"
               color="primary"
               onClick={() => {
                 window.open('/portfolio/documents/musers-process.pdf');
+              }}
+            >
+              See My Process
+            </Button> */}
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                history.push('/musers');
               }}
             >
               See My Process
@@ -61,15 +76,6 @@ class ProjectSection extends Component {
             >
               See It In Action
             </Button>
-
-            {/* <Button
-              size="medium"
-              onClick={() => {
-                history.push('/musers');
-              }}
-            >
-              See My Process
-            </Button> */}
           </ContentCol>
         </IntroContainer>
       </MainContainer>
