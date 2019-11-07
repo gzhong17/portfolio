@@ -8,13 +8,11 @@ import {
   SectionHeader,
   LabelText
 } from 'AmberComponent';
-import { IconButton, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import { Row, Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
-import Icon from '@material-ui/core/Icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import StarsIcon from '@material-ui/icons/Stars';
 
 class MusersDetails extends Component {
   render() {
@@ -25,40 +23,34 @@ class MusersDetails extends Component {
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ProjectHeader>Musers by MuseFind</ProjectHeader>
-            <LabelText>About The Project</LabelText>
             <ParagraphText>
               Musers is an online influencer portfolio, where influencers can
               upload their background information, social/audience stats, past
               work experiences, and services. This platform aims to help them
               communicate immediate value and professionalism.
             </ParagraphText>
-            <ParagraphText>
-              <a href="http://musers.co" alt="Link to Musers website">
-                Link to Platform
-              </a>
-            </ParagraphText>
+            <Button
+              className={classes.btn}
+              size="medium"
+              onClick={() => {
+                window.open('http://musers.co');
+              }}
+            >
+              See It In Action
+            </Button>
           </ContentCol>
-          <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers-sample.png')} />
+          <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
+            <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
           </ContentCol>
-          <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers-sample.png')} />
-          </ContentCol>
+
           {/* <LabelText>Influencer Online Portfolio</LabelText> */}
         </SectionContainer>
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <LabelText>The Process</LabelText>
+            <ProcessLabelText>The Process</ProcessLabelText>
             <ProcessContainer>
               <ProcessCol lg={1} md={1} sm={1} xs={1}>
-                <ol>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
+                <ProcessImg src={require('images/musers/process-path.png')} />
               </ProcessCol>
               <ProcessCol lg={11} md={11} sm={11} xs={11}>
                 <ParagraphText>
@@ -180,11 +172,7 @@ class MusersDetails extends Component {
           <ContentCol lg={8} md={8} sm={12} xs={12}>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE] It’s more fun to hear about it over a London
-                  Fog or Bubble Tea, but since you’re here already, here’s the
-                  whole story!
-                </SectionHeader>
+                <ProjectImg src={require('images/musers/codesigners.png')} />
               </InnerCol>
             </ColContainer>
             <ColContainer>
@@ -250,26 +238,26 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]For the first workshop session with our 10
-                  influencer “co-designers”, I came up with a set of interview
-                  questions
-                </SectionHeader>
+                <ProjectImg
+                  src={require('images/musers/affinity-diagram.png')}
+                />
                 <ImgLabelText>
                   Using Trello board for affinity diagramming
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]Meeting remotely proved to be a challenge, as I
-                  had to think outside-the-box to run collaborative exercises.
-                </SectionHeader>
+                <ProjectImg
+                  src={require('images/musers/presentation-slide.png')}
+                />
                 <ImgLabelText>Presenting discovery findings</ImgLabelText>
               </InnerCol>
             </ColContainer>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <LabelText>Nugget of Wisdom #1</LabelText>
+                <NuggetContainer>
+                  <StarsIcon color="secondary" />
+                  <NuggetLabel>Nugget of Wisdom #1</NuggetLabel>
+                </NuggetContainer>
                 <ParagraphText>
                   I would’ve avoided some of these issues by meeting locally,
                   but I had considered how we would have a higher response rate
@@ -309,20 +297,15 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]For the first workshop session with our 10
-                  influencer “co-designers”, I came up with a set of interview
-                  questions
-                </SectionHeader>
+                <ProjectImg src={require('images/musers/media-kits.png')} />
                 <ImgLabelText>
                   Looking for patterns and styles in media kits
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]Meeting remotely proved to be a challenge, as I
-                  had to think outside-the-box to run collaborative exercises.
-                </SectionHeader>
+                <ProjectImg
+                  src={require('images/musers/profile-analysis.png')}
+                />
                 <ImgLabelText>
                   Analyzing media kits and marketplaces
                 </ImgLabelText>
@@ -330,7 +313,10 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <LabelText>Nugget of Wisdom #2</LabelText>
+                <NuggetContainer>
+                  <StarsIcon color="secondary" />
+                  <NuggetLabel>Nugget of Wisdom #2</NuggetLabel>
+                </NuggetContainer>
                 <ParagraphText>
                   I found it incredibly insightful to learn from other
                   industries, because I can draw many parallels from their
@@ -369,18 +355,11 @@ class MusersDetails extends Component {
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <LabelText>Chapter 4</LabelText>
             <SectionHeader>Design Process</SectionHeader>
-            <ColContainer>
-              <InnerCol lg={1} md={1} sm={1} xs={1}>
-                <ol>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
-              </InnerCol>
-              <InnerCol lg={11} md={11} sm={11} xs={11}>
+            <ProcessContainer>
+              <ProcessCol lg={1} md={1} sm={1} xs={1}>
+                <ProcessImg src={require('images/musers/process-path.png')} />
+              </ProcessCol>
+              <ProcessCol lg={11} md={11} sm={11} xs={11}>
                 <ParagraphText>
                   <ol>
                     <li>User Discovery</li>
@@ -391,8 +370,8 @@ class MusersDetails extends Component {
                     <li>Launch!</li>
                   </ol>
                 </ParagraphText>
-              </InnerCol>
-            </ColContainer>
+              </ProcessCol>
+            </ProcessContainer>
           </ContentCol>
           <ContentCol lg={8} md={8} sm={12} xs={12}>
             <ColContainer>
@@ -417,20 +396,15 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]For the first workshop session with our 10
-                  influencer “co-designers”, I came up with a set of interview
-                  questions
-                </SectionHeader>
+                <ProjectImg src={require('images/musers/sketches.png')} />
                 <ImgLabelText>
                   Form follows function, designing to solve user issues
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]Meeting remotely proved to be a challenge, as I
-                  had to think outside-the-box to run collaborative exercises.
-                </SectionHeader>
+                <ProjectImg
+                  src={require('images/musers/profile-iterations.png')}
+                />
                 <ImgLabelText>
                   Constant iteration of the layout and content
                 </ImgLabelText>
@@ -438,7 +412,10 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <LabelText>Nugget of Wisdom #3</LabelText>
+                <NuggetContainer>
+                  <StarsIcon color="secondary" />
+                  <NuggetLabel>Nugget of Wisdom #3</NuggetLabel>
+                </NuggetContainer>
                 <ParagraphText>
                   While working on the product roadmap, I learned to compromise
                   and prioritize features and releases due to technical
@@ -515,20 +492,13 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]For the first workshop session with our 10
-                  influencer “co-designers”, I came up with a set of interview
-                  questions
-                </SectionHeader>
+                <ProjectImg src={require('images/musers/workshop.png')} />
                 <ImgLabelText>
                   Documenting feedback from local and remote participants
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <SectionHeader>
-                  [INSERT IMAGE]Meeting remotely proved to be a challenge, as I
-                  had to think outside-the-box to run collaborative exercises.
-                </SectionHeader>
+                <ProjectImg src={require('images/musers/revisions.png')} />
                 <ImgLabelText>
                   Revising the process based on real user behaviour
                 </ImgLabelText>
@@ -558,7 +528,10 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <LabelText>Nugget of Wisdom #4</LabelText>
+                <NuggetContainer>
+                  <StarsIcon color="secondary" />
+                  <NuggetLabel>Nugget of Wisdom #4</NuggetLabel>
+                </NuggetContainer>
                 <ParagraphText>
                   Understanding the user’s process and design around how they
                   truly behave was so crucial. I learned to avoid funneling
@@ -598,7 +571,10 @@ class MusersDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <LabelText>Final Nugget of Wisdom #5</LabelText>
+                <NuggetContainer>
+                  <StarsIcon color="secondary" />
+                  <NuggetLabel>Final Nugget of Wisdom #5</NuggetLabel>
+                </NuggetContainer>
                 <ParagraphText>
                   Looking back, things I would’ve done differently would be to
                   more frequently engage with our ‘co-designer’ influencers,
@@ -617,9 +593,17 @@ class MusersDetails extends Component {
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
-          <ContentCol lg={4} md={4} sm={12} xs={12}></ContentCol>
-          <ContentCol lg={4} md={4} sm={12} xs={12}></ContentCol>
-          <ContentCol lg={4} md={4} sm={12} xs={12}></ContentCol>
+          <ContentCol lg={4} md={4} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/profile.png')} />
+          </ContentCol>
+          <ContentCol lg={4} md={4} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/portfolio.png')} />
+            <ProjectImg src={require('images/musers/onboarding.png')} />
+          </ContentCol>
+          <ContentCol lg={4} md={4} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/portfolio-details.png')} />
+            <ProjectImg src={require('images/musers/website.png')} />
+          </ContentCol>
         </SectionContainer>
       </MainContainer>
     );
@@ -635,27 +619,53 @@ const MainContainer = Base.extend`
 `;
 const SectionContainer = Row.extend`
   display: flex;
-  margin-top: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
-  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
+  margin-top: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+`;
+
+const NuggetContainer = Row.extend`
+  display: flex;
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
+  align-items: center;
+`;
+
+const NuggetLabel = LabelText.extend`
+  margin-bottom: 0;
+  margin-left: 8px;
 `;
 
 const ContentCol = Col.extend``;
 
 const ColContainer = Row.extend`
   display: flex;
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 
 const InnerCol = Col.extend``;
 
 const ProcessContainer = Row.extend`
   display: flex;
+  align-items: center;
+  margin-bottom: ${props => (props.theme.isMobile ? '8pt' : '0pt')};
+`;
+
+const ProcessLabelText = LabelText.extend`
+  margin-bottom: ${props => (props.theme.isMobile ? '0pt' : '16pt')};
 `;
 
 const ProcessCol = Col.extend``;
 
-const ProjectImg = styled.img`
+const ProjectHeroImg = styled.img`
   margin-left: ${props => (props.theme.isMobile ? '12pt' : '0')};
+  width: ${props => (props.theme.isMobile ? '100%' : '80%')};
+`;
+const ProjectImg = styled.img`
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
   width: ${props => (props.theme.isMobile ? '100%' : '100%')};
+`;
+
+const ProcessImg = styled.img`
+  width: ${props => (props.theme.isMobile ? '18px' : '18px')};
 `;
 
 const styles = theme => ({});
