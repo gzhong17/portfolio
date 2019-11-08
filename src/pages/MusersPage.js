@@ -5,6 +5,10 @@ import { Base } from 'AmberComponent';
 import { MusersDetails, ContactSection } from 'pages';
 
 class MusersPage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <MainContainer>

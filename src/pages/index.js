@@ -1,4 +1,5 @@
 export { default as AboutPage } from './AboutPage';
+export { default as AboutDetails } from './AboutDetails';
 export { default as HomePage } from './HomePage';
 export { default as HeroSection } from './HeroSection';
 export { default as ProjectSection } from './ProjectSection';

@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
 import Header from 'Header';
+import { withStyles } from '@material-ui/core/styles';
+import { Base } from 'AmberComponent';
+import { AboutDetails, ContactSection } from 'pages';
 
 class AboutPage extends Component {
   render() {
     return (
-      <div>
-        <Header pageName="about page" />
-        <h1>Hello this is gloria's AboutPage</h1>
-      </div>
+      <MainContainer>
+        <Header />
+        <AboutDetails />
+        <ContactSection />
+      </MainContainer>
     );
   }
 }
 
-export default AboutPage;
+const MainContainer = Base.extend`
+  background-color: ${props => props.theme.whiteColor};
+  display: flex;
+  flex-direction: column;
+  margin: ${props => (props.theme.isMobile ? '16px' : '40px')};
+`;
+
+const styles = theme => ({});
+
+export default withStyles(styles, { withTheme: true })(AboutPage);

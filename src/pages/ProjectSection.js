@@ -10,11 +10,6 @@ import Icon from '@material-ui/core/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProjectSection extends Component {
-  // componentDidUpdate(prevProps) {
-  //   if (this.props.location !== prevProps.location) {
-  //     window.scrollTo(0, 0);
-  //   }
-  // }
   render() {
     const { classes, history } = this.props;
 
