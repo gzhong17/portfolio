@@ -73,6 +73,37 @@ class ProjectSection extends Component {
             </Button>
           </ContentCol>
         </IntroContainer>
+        <IntroContainer>
+          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/musers-sample.png')} />
+          </ContentCol>
+          <ContentCol lg={4} md={5} sm={11} xs={12}>
+            <ProjectHeader>Fraser Health Workspace</ProjectHeader>
+            {/* <LabelText>Influencer Online Portfolio</LabelText> */}
+            <ParagraphText>
+              The Fraser Health SharePoint Workspaces allows 26K+ Fraser Health
+              employees in the Vancouver lower mainland to access request forms,
+              training and support, and upcoming news.
+            </ParagraphText>
+            <ParagraphText>
+              <ul>
+                <li>Project Management</li>
+                <li>UX Research</li>
+                <li>UX/UI Design</li>
+              </ul>
+            </ParagraphText>
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                history.push('/fraserhealth');
+              }}
+            >
+              See My Process
+            </Button>
+          </ContentCol>
+        </IntroContainer>
       </MainContainer>
     );
   }
