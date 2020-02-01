@@ -21,11 +21,19 @@ class AboutDetails extends Component {
     return (
       <MainContainer>
         <SectionContainer>
-          <ContentCol lg={4} md={4} sm={12} xs={12}>
+          <ContentCol lg={8} md={8} sm={12} xs={12}>
             <ProjectHeader>Who's Gloria?</ProjectHeader>
             <ParagraphText>
-              An INFP that loves Forensic Files, Brooklyn 99, Sailormoon,
-              anything lavender, has two cats, and 50+ houseplants!
+              I always say if I weren’t a UX designer, I would’ve been a
+              detective or a counsellor. Thankfully, UX and product design
+              brings the best of both worlds, allowing me to create impactful
+              solutions by using empathy to solve clues left by users.
+            </ParagraphText>
+            <ParagraphText>
+              When I’m not designing, I’m either watching Forensic Files or
+              tending to my houseplants (check them out IG @growsomeshade). I’m
+              also passionate about mental health and personal development, so
+              you’ll hear me chatting away about team building and culture!
             </ParagraphText>
             <Button
               className={classes.btn}
@@ -36,63 +44,46 @@ class AboutDetails extends Component {
             >
               See My Houseplants
             </Button>
-            <Button
-              className={classes.btn}
-              size="medium"
-              onClick={() => {
-                window.open('http://instagram.com/my_junnie');
-              }}
-            >
-              See My Cats
-            </Button>
           </ContentCol>
           <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
             <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
           </ContentCol>
         </SectionContainer>
-
+        <SectionContainer>
+          <ContentCol lg={8} md={8} sm={12} xs={12}>
+            <SectionHeader>Design Principles I Live By</SectionHeader>
+          </ContentCol>
+        </SectionContainer>
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProcessLabelText>The Process</ProcessLabelText>
-            <ProcessContainer>
-              <ProcessCol lg={1} md={1} sm={1} xs={1}>
-                <ProcessImg src={require('images/musers/process-path.png')} />
-              </ProcessCol>
-              <ProcessCol lg={11} md={11} sm={11} xs={11}>
-                <ParagraphText>
-                  <ol>
-                    <li>User Discovery</li>
-                    <li>Ideate / Prototype</li>
-                    <li>User Feedback</li>
-                    <li>Build</li>
-                    <li>Repeat 3 + 4 </li>
-                    <li>Launch!</li>
-                  </ol>
-                </ParagraphText>
-              </ProcessCol>
-            </ProcessContainer>
+            <ParagraphText>
+              <LabelText>Empathy is Key</LabelText>
+            </ParagraphText>
+            <ParagraphText>
+              The usefulness of a design really depends on the user and
+              stakeholder needs, not a prescription of what you assume is best
+              for them. Treat design as an ego-free zone.
+            </ParagraphText>
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ParagraphText>
-              <LabelText>Role</LabelText>
+              <LabelText>Always Know Your User</LabelText>
               Lead Product Designer in our team of 4
             </ParagraphText>
             <ParagraphText>
-              <ul>
-                <li>Product Management</li>
-                <li>UX Research</li>
-                <li>UX/UI Design</li>
-              </ul>
+              Live and breathe in data to understand who you’re designing for.
+              Influence others on your team to do the same, because we’re all
+              responsible for our user. Let the data speak on behalf of the
+              user.
             </ParagraphText>
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <LabelText>Tools Used</LabelText>
+            <LabelText>North Star Vision</LabelText>
             <ParagraphText>
-              <ul>
-                <li>Sketch</li>
-                <li>Invision</li>
-                <li>React</li>
-              </ul>
+              What differentiates a good designer from a great one is the
+              ability to step back and ask “How does this design impact our
+              greater vision?” Let your design decisions bring you closer to the
+              main goal.
             </ParagraphText>
           </ContentCol>
         </SectionContainer>
