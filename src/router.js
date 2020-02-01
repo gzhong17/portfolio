@@ -2,7 +2,13 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 // Desktop view
 import App from 'App';
-import { AboutPage, HomePage, MusersPage, FraserHealthPage } from 'pages';
+import {
+  AboutPage,
+  HomePage,
+  MusersPage,
+  FraserHealthPage,
+  FlexridePage
+} from 'pages';
 
 const routes = (
   <Route
@@ -15,6 +21,12 @@ const routes = (
               path="/musers"
               render={() => {
                 return <MusersPage />;
+              }}
+            />
+            <Route
+              path="/flexride"
+              render={() => {
+                return <FlexridePage />;
               }}
             />
             <Route

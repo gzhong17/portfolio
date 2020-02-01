@@ -34,7 +34,9 @@ class FraserHealthDetails extends Component {
             </ParagraphText>
           </ContentCol>
           <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
-            <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
+            <ProjectHeroImg
+              src={require('images/fraserhealth/fh-home-small.png')}
+            />
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -96,7 +98,8 @@ class FraserHealthDetails extends Component {
               <ul>
                 <li>1-2 month project</li>
                 <li>
-                  Purpose to solve usability issues and provide a visual update
+                  Purpose to solve usability issues and refresh the visual look
+                  across the Workspace
                 </li>
                 <li>
                   Reduce time and mental capacity by streamlining everyday tasks
@@ -116,8 +119,8 @@ class FraserHealthDetails extends Component {
                   section of the Workspace for user feedback
                 </li>
                 <li>
-                  Created graphic assets, copywriting, and wrote customized code
-                  within the SharePoint Workspace
+                  Created graphic assets, icons, copywriting, and wrote
+                  customized code within the SharePoint Workspace
                 </li>
               </ul>
             </ParagraphText>
@@ -147,14 +150,9 @@ class FraserHealthDetails extends Component {
           </ContentCol>
           <ContentCol lg={8} md={8} sm={12} xs={12}>
             <ColContainer>
-              <InnerCol lg={12} md={12} sm={12} xs={12}>
-                <ProjectImg src={require('images/musers/codesigners.png')} />
-              </InnerCol>
-            </ColContainer>
-            <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
                 <ParagraphText>
-                  As Fraser Health has been moving towards better integration
+                  As Fraser Health have been moving towards better integration
                   between existing processes and new technology, a clear need to
                   update the Fraser Health (FH) Sharepoint Workspace was
                   identified.
@@ -211,6 +209,25 @@ class FraserHealthDetails extends Component {
               </InnerCol>
             </ColContainer>
             <ColContainer>
+              <InnerCol lg={6} md={6} sm={12} xs={12}>
+                <ProjectImg
+                  src={require('images/fraserhealth/fh-layout.png')}
+                />
+                <ImgLabelText>
+                  Reorganizing and prioritizing the space to display the most
+                  relevant information at the top
+                </ImgLabelText>
+              </InnerCol>
+              <InnerCol lg={6} md={6} sm={12} xs={12}>
+                <ProjectImg
+                  src={require('images/fraserhealth/fh-icons-drafts.png')}
+                />
+                <ImgLabelText>
+                  Balancing creativity and following existing branding
+                </ImgLabelText>
+              </InnerCol>
+            </ColContainer>
+            <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
                 <NuggetContainer>
                   <StarsIcon color="secondary" />
@@ -223,22 +240,6 @@ class FraserHealthDetails extends Component {
                   crucial to balance with any existing branding guidelines for a
                   consistent and unified experience.
                 </ParagraphText>
-              </InnerCol>
-            </ColContainer>
-            <ColContainer>
-              <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <ProjectImg
-                  src={require('images/musers/affinity-diagram.png')}
-                />
-                <ImgLabelText>
-                  Using Trello board for affinity diagramming
-                </ImgLabelText>
-              </InnerCol>
-              <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <ProjectImg
-                  src={require('images/musers/presentation-slide.png')}
-                />
-                <ImgLabelText>Presenting discovery findings</ImgLabelText>
               </InnerCol>
             </ColContainer>
           </ContentCol>
@@ -270,17 +271,19 @@ class FraserHealthDetails extends Component {
             </ColContainer>
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
-                <ProjectImg src={require('images/musers/media-kits.png')} />
+                <ProjectImg
+                  src={require('images/fraserhealth/support-original2.png')}
+                />
                 <ImgLabelText>
-                  Looking for patterns and styles in media kits
+                  Identifying what the old layout did and didn't perform well at
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
                 <ProjectImg
-                  src={require('images/musers/profile-analysis.png')}
+                  src={require('images/fraserhealth/support-home.png')}
                 />
                 <ImgLabelText>
-                  Analyzing media kits and marketplaces
+                  Dividing up information to reduce redundancy and fatigue
                 </ImgLabelText>
               </InnerCol>
             </ColContainer>
@@ -329,15 +332,17 @@ class FraserHealthDetails extends Component {
         </SectionContainer>
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/profile.png')} />
+            <ProjectImg
+              src={require('images/fraserhealth/fh-home-small.png')}
+            />
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/portfolio.png')} />
-            <ProjectImg src={require('images/musers/portfolio-details.png')} />
+            <ProjectImg src={require('images/fraserhealth/support-home.png')} />
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/onboarding.png')} />
-            <ProjectImg src={require('images/musers/website.png')} />
+            <ProjectImg
+              src={require('images/fraserhealth/support-admin.png')}
+            />
           </ContentCol>
         </SectionContainer>
       </MainContainer>

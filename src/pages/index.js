@@ -8,3 +8,5 @@ export { default as MusersPage } from './MusersPage';
 export { default as MusersDetails } from './MusersDetails';
 export { default as FraserHealthPage } from './FraserHealthPage';
 export { default as FraserHealthDetails } from './FraserHealthDetails';
+export { default as FlexridePage } from './FlexridePage';
+export { default as FlexrideDetails } from './FlexrideDetails';
