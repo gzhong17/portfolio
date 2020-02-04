@@ -21,7 +21,7 @@ class AboutDetails extends Component {
     return (
       <MainContainer>
         <SectionContainer>
-          <ContentCol lg={8} md={8} sm={12} xs={12}>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
             <ProjectHeader>Who's Gloria?</ProjectHeader>
             <ParagraphText>
               I always say if I weren’t a UX designer, I would’ve been a
@@ -31,22 +31,23 @@ class AboutDetails extends Component {
             </ParagraphText>
             <ParagraphText>
               When I’m not designing, I’m either watching Forensic Files or
-              tending to my houseplants (check them out IG @growsomeshade). I’m
-              also passionate about mental health and personal development, so
-              you’ll hear me chatting away about team building and culture!
+              tending to my houseplants. I’m also passionate about mental health
+              and personal development, so you’ll hear me chatting away about
+              team building and culture!
             </ParagraphText>
             <Button
               className={classes.btn}
               size="medium"
+              color="primary"
               onClick={() => {
                 window.open('http://instagram.com/growsomeshade');
               }}
             >
-              See My Houseplants
+              Check Out My Houseplants
             </Button>
           </ContentCol>
-          <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
-            <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
+          <ContentCol lgOffset={1} lg={3} mdOffset={1} md={3} sm={12} xs={12}>
+            <PortraitImg src={require('images/about-self.jpg')} />
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -54,7 +55,7 @@ class AboutDetails extends Component {
             <SectionHeader>Design Principles I Live By</SectionHeader>
           </ContentCol>
         </SectionContainer>
-        <SectionContainer>
+        <PrinciplesContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ParagraphText>
               <LabelText>Empathy is Key</LabelText>
@@ -68,7 +69,6 @@ class AboutDetails extends Component {
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ParagraphText>
               <LabelText>Always Know Your User</LabelText>
-              Lead Product Designer in our team of 4
             </ParagraphText>
             <ParagraphText>
               Live and breathe in data to understand who you’re designing for.
@@ -86,7 +86,7 @@ class AboutDetails extends Component {
               main goal.
             </ParagraphText>
           </ContentCol>
-        </SectionContainer>
+        </PrinciplesContainer>
       </MainContainer>
     );
   }
@@ -103,6 +103,10 @@ const SectionContainer = Row.extend`
   display: flex;
   margin-top: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '24pt')};
+`;
+
+const PrinciplesContainer = SectionContainer.extend`
+  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '124pt')};
 `;
 
 const NuggetContainer = Row.extend`
@@ -148,6 +152,11 @@ const ProjectImg = styled.img`
 
 const ProcessImg = styled.img`
   width: ${props => (props.theme.isMobile ? '18px' : '18px')};
+`;
+
+const PortraitImg = styled.img`
+  margin-left: ${props => (props.theme.isMobile ? '0' : '24pt')};
+  width: ${props => (props.theme.isMobile ? '100%' : '400px')};
 `;
 
 const styles = theme => ({});
