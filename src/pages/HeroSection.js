@@ -7,14 +7,14 @@ import {
   SecondaryHeader,
   LabelText
 } from 'AmberComponent';
-import { IconButton } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import { Button } from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Col, Row } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
 
 class HeroSection extends Component {
   render() {
-    const { classes } = this.props;
+    const { classes, history } = this.props;
 
     return (
       <MainContainer>
@@ -27,6 +27,15 @@ class HeroSection extends Component {
               translating user data into valuable solutions, through the lens of
               empathy and critical thinking.
             </HeroParagraph>
+            <Button
+              size="medium"
+              color="primary"
+              onClick={() => {
+                history.push('/about');
+              }}
+            >
+              Who's Gloria?
+            </Button>
           </ContentCol>
           <ContentCol lg={5} md={6} sm={12} xs={12}>
             <PortraitImg
@@ -36,7 +45,7 @@ class HeroSection extends Component {
         </IntroContainer>
         <UpcomingContainer>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
-            <LabelText>See What I'm Working On Lately</LabelText>
+            <SecondaryHeader>See What I'm Working On Lately</SecondaryHeader>
           </ContentCol>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
             <ArrowImg src={require('images/arrow.svg')} />

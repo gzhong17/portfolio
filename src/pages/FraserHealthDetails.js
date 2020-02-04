@@ -88,8 +88,8 @@ class FraserHealthDetails extends Component {
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <SectionHeader>Summary</SectionHeader>
             <ParagraphText>
-              It was a great experience, large complex systems, working within
-              it and create a new order
+              It was a great experience working with a large complex system,
+              untangling and creating a new order that better serves its users.
             </ParagraphText>
           </ContentCol>
           <ContentCol lg={8} md={8} sm={12} xs={12}>
@@ -214,8 +214,8 @@ class FraserHealthDetails extends Component {
                   src={require('images/fraserhealth/fh-layout.png')}
                 />
                 <ImgLabelText>
-                  Reorganizing and prioritizing the space to display the most
-                  relevant information at the top
+                  Prioritizing most relevant information in high traffic areas
+                  of the platform
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
@@ -223,7 +223,8 @@ class FraserHealthDetails extends Component {
                   src={require('images/fraserhealth/fh-icons-drafts.png')}
                 />
                 <ImgLabelText>
-                  Balancing creativity and following existing branding
+                  Balancing creativity with current branding for a cohesive
+                  brand experience
                 </ImgLabelText>
               </InnerCol>
             </ColContainer>
@@ -272,18 +273,20 @@ class FraserHealthDetails extends Component {
             <ColContainer>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
                 <ProjectImg
-                  src={require('images/fraserhealth/support-original2.png')}
+                  src={require('images/fraserhealth/support-original2-edit.png')}
                 />
                 <ImgLabelText>
-                  Identifying what the old layout did and didn't perform well at
+                  Identifying pros and cons of old system, use to understand
+                  user behaviour and opportunities
                 </ImgLabelText>
               </InnerCol>
               <InnerCol lg={6} md={6} sm={12} xs={12}>
                 <ProjectImg
-                  src={require('images/fraserhealth/support-home.png')}
+                  src={require('images/fraserhealth/support-home-edit.png')}
                 />
                 <ImgLabelText>
-                  Dividing up information to reduce redundancy and fatigue
+                  Dividing up information to reduce redundancy and mental
+                  fatigue
                 </ImgLabelText>
               </InnerCol>
             </ColContainer>
