@@ -16,7 +16,14 @@ const routes = (
       return (
         <App>
           <Switch>
-            <Route path="/about" component={AboutPage} />
+            {/* <Route path="/about" component={AboutPage} /> */}
+            <Route
+              path="/about"
+              render={() => {
+                return <AboutPage />;
+              }}
+            />
+
             <Route
               path="/musers"
               render={() => {

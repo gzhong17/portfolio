@@ -7,6 +7,7 @@ import {
   SecondaryHeader,
   LabelText
 } from 'AmberComponent';
+import { withRouter } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Col, Row } from 'react-styled-flexboxgrid';
@@ -21,7 +22,7 @@ class HeroSection extends Component {
         <IntroContainer>
           <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
             <TitleHeader>Hi there, I'm Gloria</TitleHeader>
-            <SecondaryHeader>Product Designer</SecondaryHeader>
+            <SecondaryHeader>Empathetic Problem Solver</SecondaryHeader>
             <HeroParagraph>
               Working in UX for the past 6 years, I’ve been passionate about
               translating user data into valuable solutions, through the lens of
@@ -101,4 +102,4 @@ const styles = theme => ({
   }
 });
 
-export default withStyles(styles, { withTheme: true })(HeroSection);
+export default withRouter(withStyles(styles, { withTheme: true })(HeroSection));

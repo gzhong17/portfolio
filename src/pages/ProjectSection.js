@@ -75,7 +75,9 @@ class ProjectSection extends Component {
         </IntroContainer>
         <IntroContainer>
           <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/musers-sample.png')} />
+            <ProjectImg
+              src={require('images/fraserhealth/fh-home-small.png')}
+            />
           </ContentCol>
           <ContentCol lg={4} md={5} sm={11} xs={12}>
             <ProjectHeader>Fraser Health Workspace</ProjectHeader>
