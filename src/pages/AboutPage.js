@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from 'Header';
 import { withStyles } from '@material-ui/core/styles';
 import { Base } from 'AmberComponent';
-import { AboutDetails, ContactSection } from 'pages';
+import { AboutDetails, MoreProjectSection, ContactProjectSection } from 'pages';
 
 class AboutPage extends Component {
   render() {
@@ -10,7 +10,8 @@ class AboutPage extends Component {
       <MainContainer>
         <Header />
         <AboutDetails />
-        <ContactSection />
+        <MoreProjectSection />
+        <ContactProjectSection />
       </MainContainer>
     );
   }

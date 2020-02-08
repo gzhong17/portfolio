@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import {
-  Base,
-  TitleHeader,
-  ParagraphText,
-  SectionHeader
-} from 'AmberComponent';
+import { Base, ParagraphText, SectionHeader } from 'AmberComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { IconButton, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import { Col } from 'react-styled-flexboxgrid';
-import styled from 'styled-components';
-import Icon from '@material-ui/core/Icon';
 
-class ContactSection extends Component {
+class ContactProjectSection extends Component {
   render() {
-    const { classes, history } = this.props;
+    const { classes } = this.props;
 
     return (
       <MainContainer id="contact">
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
             <SectionHeader>I'm Happy To Chat!</SectionHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
@@ -68,6 +60,8 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
+  padding-left: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
+  padding-right: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '16pt')};
 `;
 const IntroContainer = Base.extend`
@@ -86,5 +80,5 @@ const styles = theme => ({
 });
 
 export default withStyles(styles, { withTheme: true })(
-  withRouter(ContactSection)
+  withRouter(ContactProjectSection)
 );

@@ -4,12 +4,10 @@ import {
   Base,
   TitleHeader,
   ParagraphText,
-  SecondaryHeader,
-  LabelText
+  SecondaryHeader
 } from 'AmberComponent';
 import { withRouter } from 'react-router-dom';
 import { Button } from '@material-ui/core';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Col, Row } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
 

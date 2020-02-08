@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Header from 'Header';
 import { withStyles } from '@material-ui/core/styles';
 import { Base } from 'AmberComponent';
-import { MusersDetails, ContactSection } from 'pages';
+import {
+  MusersDetails,
+  MoreProjectSection,
+  ContactProjectSection
+} from 'pages';
 
 class MusersPage extends Component {
   componentDidMount() {
@@ -14,7 +18,8 @@ class MusersPage extends Component {
       <MainContainer>
         <Header />
         <MusersDetails />
-        <ContactSection />
+        <MoreProjectSection />
+        <ContactProjectSection />
       </MainContainer>
     );
   }

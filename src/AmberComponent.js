@@ -105,6 +105,27 @@ exports.ImgLabelText = BaseText.withComponent('p').extend`
   color: ${props => props.theme.primaryTextColor};
 `;
 
-exports.LinkText = BaseText.withComponent('a').extend`
+exports.HomeLinkText = BaseText.withComponent('a').extend`
   text-decoration: none;
+`;
+
+exports.LinkText = BaseText.withComponent('a').extend`
+  font-size: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
+  font-family: ${props => props.theme.fonts.primaryFont};
+  color: ${props => props.theme.primaryColor};
+  display: inline;
+`;
+
+exports.UnorderedList = BaseText.withComponent('ul').extend`
+  font-size: 12pt;
+  line-height: 160%;
+  color: ${props => props.theme.primaryTextColor};
+  font-family: ${props => props.theme.fonts.primaryFont};
+`;
+
+exports.OrderedList = BaseText.withComponent('ol').extend`
+  font-size: 12pt;
+  line-height: 160%;
+  color: ${props => props.theme.primaryTextColor};
+  font-family: ${props => props.theme.fonts.primaryFont};
 `;

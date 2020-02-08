@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Header from 'Header';
 import { withStyles } from '@material-ui/core/styles';
 import { Base } from 'AmberComponent';
-import { FraserHealthDetails, ContactSection } from 'pages';
+import {
+  FraserHealthDetails,
+  MoreProjectSection,
+  ContactProjectSection
+} from 'pages';
 
 class FraserHealthPage extends Component {
   componentDidMount() {
@@ -14,7 +18,8 @@ class FraserHealthPage extends Component {
       <MainContainer>
         <Header />
         <FraserHealthDetails />
-        <ContactSection />
+        <MoreProjectSection />
+        <ContactProjectSection />
       </MainContainer>
     );
   }

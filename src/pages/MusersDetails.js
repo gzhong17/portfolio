@@ -6,7 +6,9 @@ import {
   ProjectHeader,
   ParagraphText,
   SectionHeader,
-  LabelText
+  LabelText,
+  OrderedList,
+  UnorderedList
 } from 'AmberComponent';
 import { Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
@@ -39,11 +41,9 @@ class MusersDetails extends Component {
               See It In Action
             </Button>
           </ContentCol>
-          <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
+          <ContentCol lgOffset={1} lg={7} md={8} sm={12} xs={12}>
             <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
           </ContentCol>
-
-          {/* <LabelText>Influencer Online Portfolio</LabelText> */}
         </SectionContainer>
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
@@ -53,16 +53,14 @@ class MusersDetails extends Component {
                 <ProcessImg src={require('images/musers/process-path.png')} />
               </ProcessCol>
               <ProcessCol lg={11} md={11} sm={11} xs={11}>
-                <ParagraphText>
-                  <ol>
-                    <li>User Discovery</li>
-                    <li>Ideate / Prototype</li>
-                    <li>User Feedback</li>
-                    <li>Build</li>
-                    <li>Repeat 3 + 4 </li>
-                    <li>Launch!</li>
-                  </ol>
-                </ParagraphText>
+                <OrderedList>
+                  <li>User Discovery</li>
+                  <li>Ideate / Prototype</li>
+                  <li>User Feedback</li>
+                  <li>Build</li>
+                  <li>Repeat 3 + 4 </li>
+                  <li>Launch!</li>
+                </OrderedList>
               </ProcessCol>
             </ProcessContainer>
           </ContentCol>
@@ -71,23 +69,19 @@ class MusersDetails extends Component {
               <LabelText>Role</LabelText>
               Lead Product Designer in our team of 4
             </ParagraphText>
-            <ParagraphText>
-              <ul>
-                <li>Product Management</li>
-                <li>UX Research</li>
-                <li>UX/UI Design</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Product Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <LabelText>Tools Used</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>Sketch</li>
-                <li>Invision</li>
-                <li>React</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Sketch</li>
+              <li>Invision</li>
+              <li>React</li>
+            </UnorderedList>
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -102,58 +96,51 @@ class MusersDetails extends Component {
           </ContentCol>
           <ContentCol lg={8} md={8} sm={12} xs={12}>
             <LabelText>Scope</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>6 month project</li>
-                <li>
-                  Purpose was to increase user engagement/customer health and
-                  lead to an increase in user conversion on the MuseFind
-                  platform
-                </li>
-                <li>
-                  Aimed to release before the holiday season, which is the
-                  busiest time of year for influencers
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>6 month project</li>
+              <li>
+                Purpose was to increase user engagement/customer health and lead
+                to an increase in user conversion on the MuseFind platform
+              </li>
+              <li>
+                Aimed to release before the holiday season, which is the busiest
+                time of year for influencers
+              </li>
+            </UnorderedList>
             <LabelText>Project Lead and Manager</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>
-                  Set up and conducted user research with a sample size of 60+
-                  influencers
-                </li>
-                <li>
-                  Communicated analysis on findings and proposed solutions to
-                  key internal stakeholders
-                </li>
-                <li>
-                  Co-ordinated with marketing and dev team to create product
-                  roadmap and release/social media strategies
-                </li>
-                <li>
-                  Collaborated/ managed feedback from 10 influencer
-                  ‘co-designers’ with expert knowledge
-                </li>
-                <li>
-                  Created sketches & hi-fi mockups for user feedback and dev
-                  team (4 iterations)
-                </li>
-                <li>
-                  Assisted dev team with building themes and components in
-                  Javascript (React.js)
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>
+                Set up and conducted user research with a sample size of 60+
+                influencers
+              </li>
+              <li>
+                Communicated analysis on findings and proposed solutions to key
+                internal stakeholders
+              </li>
+              <li>
+                Co-ordinated with marketing and dev team to create product
+                roadmap and release/social media strategies
+              </li>
+              <li>
+                Collaborated/ managed feedback from 10 influencer ‘co-designers’
+                with expert knowledge
+              </li>
+              <li>
+                Created sketches & hi-fi mockups for user feedback and dev team
+                (4 iterations)
+              </li>
+              <li>
+                Assisted dev team with building themes and components in
+                Javascript (React.js)
+              </li>
+            </UnorderedList>
             <LabelText>Impact</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>
-                  Managed soft launch to 50 influencers with a combined
-                  followership of 1.4M followers
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>
+                Managed soft launch to 50 influencers with a combined
+                followership of 1.4M followers
+              </li>
+            </UnorderedList>
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -222,18 +209,16 @@ class MusersDetails extends Component {
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
                 <LabelText>Discovery #1</LabelText>
-                <ParagraphText>
-                  <ol>
-                    <li>
-                      [Showing Value] Struggling to stand out due to IG
-                      algorithm changes and market oversaturation
-                    </li>
-                    <li>
-                      [Lack of Time] To compensate, influencers overwhelm
-                      themselves by working harder in order to be seen
-                    </li>
-                  </ol>
-                </ParagraphText>
+                <OrderedList>
+                  <li>
+                    [Showing Value] Struggling to stand out due to IG algorithm
+                    changes and market oversaturation
+                  </li>
+                  <li>
+                    [Lack of Time] To compensate, influencers overwhelm
+                    themselves by working harder in order to be seen
+                  </li>
+                </OrderedList>
               </InnerCol>
             </ColContainer>
             <ColContainer>
@@ -360,16 +345,14 @@ class MusersDetails extends Component {
                 <ProcessImg src={require('images/musers/process-path.png')} />
               </ProcessCol>
               <ProcessCol lg={11} md={11} sm={11} xs={11}>
-                <ParagraphText>
-                  <ol>
-                    <li>User Discovery</li>
-                    <li>Ideate / Prototype</li>
-                    <li>User Feedback</li>
-                    <li>Build</li>
-                    <li>Repeat 3 + 4 </li>
-                    <li>Launch!</li>
-                  </ol>
-                </ParagraphText>
+                <OrderedList>
+                  <li>User Discovery</li>
+                  <li>Ideate / Prototype</li>
+                  <li>User Feedback</li>
+                  <li>Build</li>
+                  <li>Repeat 3 + 4 </li>
+                  <li>Launch!</li>
+                </OrderedList>
               </ProcessCol>
             </ProcessContainer>
           </ContentCol>
@@ -476,18 +459,16 @@ class MusersDetails extends Component {
             <ColContainer>
               <InnerCol lg={12} md={12} sm={12} xs={12}>
                 <LabelText>Discovery #2</LabelText>
-                <ParagraphText>
-                  <ol>
-                    <li>
-                      [Exposure] Exposure provided value, not only to brands,
-                      but also PR companies/ talent agencies
-                    </li>
-                    <li>
-                      [Customization] Media kit are the face of the influencer,
-                      highly customizable to match own brand
-                    </li>
-                  </ol>
-                </ParagraphText>
+                <OrderedList>
+                  <li>
+                    [Exposure] Exposure provided value, not only to brands, but
+                    also PR companies/ talent agencies
+                  </li>
+                  <li>
+                    [Customization] Media kit are the face of the influencer,
+                    highly customizable to match own brand
+                  </li>
+                </OrderedList>
               </InnerCol>
             </ColContainer>
             <ColContainer>

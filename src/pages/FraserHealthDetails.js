@@ -6,9 +6,10 @@ import {
   ProjectHeader,
   ParagraphText,
   SectionHeader,
-  LabelText
+  LabelText,
+  OrderedList,
+  UnorderedList
 } from 'AmberComponent';
-import { Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
 import { Row, Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
@@ -33,7 +34,7 @@ class FraserHealthDetails extends Component {
               upcoming news.
             </ParagraphText>
           </ContentCol>
-          <ContentCol lgOffset={1} lg={7} md={4} sm={12} xs={12}>
+          <ContentCol lgOffset={1} lg={7} md={8} sm={12} xs={12}>
             <ProjectHeroImg
               src={require('images/fraserhealth/fh-home-small.png')}
             />
@@ -47,15 +48,13 @@ class FraserHealthDetails extends Component {
                 <ProcessImg src={require('images/musers/process-path.png')} />
               </ProcessCol>
               <ProcessCol lg={11} md={11} sm={11} xs={11}>
-                <ParagraphText>
-                  <ol>
-                    <li>Defining the Problem</li>
-                    <li>Initial Research</li>
-                    <li>Ideation & Prototyping</li>
-                    <li>User Feedback</li>
-                    <li>Launch to 26K+ users</li>
-                  </ol>
-                </ParagraphText>
+                <OrderedList>
+                  <li>Defining the Problem</li>
+                  <li>Initial Research</li>
+                  <li>Ideation & Prototyping</li>
+                  <li>User Feedback</li>
+                  <li>Launch to 26K+ users</li>
+                </OrderedList>
               </ProcessCol>
             </ProcessContainer>
           </ContentCol>
@@ -64,24 +63,20 @@ class FraserHealthDetails extends Component {
               <LabelText>Role</LabelText>
               Sole project as UX/UI Designer
             </ParagraphText>
-            <ParagraphText>
-              <ul>
-                <li>Project Management</li>
-                <li>UX Research</li>
-                <li>UX/UI Design</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Project Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <LabelText>Tools Used</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Microsoft SharePoint</li>
-                <li>HTML5 & CSS3</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Microsoft SharePoint</li>
+              <li>HTML5 & CSS3</li>
+            </UnorderedList>
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -94,45 +89,39 @@ class FraserHealthDetails extends Component {
           </ContentCol>
           <ContentCol lg={8} md={8} sm={12} xs={12}>
             <LabelText>Scope</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>1-2 month project</li>
-                <li>
-                  Purpose to solve usability issues and refresh the visual look
-                  across the Workspace
-                </li>
-                <li>
-                  Reduce time and mental capacity by streamlining everyday tasks
-                  for users (e.g. admins, nurses, etc)
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>1-2 month project</li>
+              <li>
+                Purpose to solve usability issues and refresh the visual look
+                across the Workspace
+              </li>
+              <li>
+                Reduce time and mental capacity by streamlining everyday tasks
+                for users (e.g. admins, nurses, etc)
+              </li>
+            </UnorderedList>
             <LabelText>Project Lead</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>
-                  Initiated design sessions, heuristic evaluations, and
-                  presented analysis and solutions to internal stakeholders
-                </li>
-                <li>
-                  Created sketches & hi-fi mockups of the home and support
-                  section of the Workspace for user feedback
-                </li>
-                <li>
-                  Created graphic assets, icons, copywriting, and wrote
-                  customized code within the SharePoint Workspace
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>
+                Initiated design sessions, heuristic evaluations, and presented
+                analysis and solutions to internal stakeholders
+              </li>
+              <li>
+                Created sketches & hi-fi mockups of the home and support section
+                of the Workspace for user feedback
+              </li>
+              <li>
+                Created graphic assets, icons, copywriting, and wrote customized
+                code within the SharePoint Workspace
+              </li>
+            </UnorderedList>
             <LabelText>Impact</LabelText>
-            <ParagraphText>
-              <ul>
-                <li>
-                  Managed launch of redesign to over 26K Fraser Health employees
-                  across the lower mainland
-                </li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>
+                Managed launch of redesign to over 26K Fraser Health employees
+                across the lower mainland
+              </li>
+            </UnorderedList>
           </ContentCol>
         </SectionContainer>
         <SectionContainer>
@@ -335,9 +324,7 @@ class FraserHealthDetails extends Component {
         </SectionContainer>
         <SectionContainer>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
-            <ProjectImg
-              src={require('images/fraserhealth/fh-home-small.png')}
-            />
+            <ProjectImg src={require('images/fraserhealth/fh-home.png')} />
           </ContentCol>
           <ContentCol lg={4} md={4} sm={12} xs={12}>
             <ProjectImg src={require('images/fraserhealth/support-home.png')} />
