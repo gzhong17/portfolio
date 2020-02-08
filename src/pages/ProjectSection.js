@@ -1,38 +1,35 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Base, ParagraphText, SectionHeader } from 'AmberComponent';
-import { IconButton, Button } from '@material-ui/core';
+import {
+  Base,
+  ParagraphText,
+  SectionHeader,
+  UnorderedList
+} from 'AmberComponent';
+import { Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import { Row, Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
-import Icon from '@material-ui/core/Icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProjectSection extends Component {
   render() {
     const { classes, history } = this.props;
 
     return (
-      <MainContainer>
+      <MainContainer id="projects">
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/musers-sample.png')} />
-          </ContentCol>
-          <ContentCol lg={4} md={5} sm={11} xs={12}>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
             <ProjectHeader>Musers by MuseFind</ProjectHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
               Musers is an online influencer portfolio platform, where
               influencers can fully showcase their professionalism and value.
             </ParagraphText>
-            <ParagraphText>
-              <ul>
-                <li>Product Management</li>
-                <li>UX Research</li>
-                <li>UX/UI Design</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Product Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
             {/* <ParagraphText>
               <a href="http://musers.co" alt="Link to Musers website">
                 Link to Platform
@@ -72,14 +69,12 @@ class ProjectSection extends Component {
               See It In Action
             </Button>
           </ContentCol>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/musers/musers-sample.png')} />
+          </ContentCol>
         </IntroContainer>
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg
-              src={require('images/fraserhealth/fh-home-small.png')}
-            />
-          </ContentCol>
-          <ContentCol lg={4} md={5} sm={11} xs={12}>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
             <ProjectHeader>Fraser Health Workspace</ProjectHeader>
             {/* <LabelText>Influencer Online Portfolio</LabelText> */}
             <ParagraphText>
@@ -87,13 +82,11 @@ class ProjectSection extends Component {
               employees in the Vancouver lower mainland to access request forms,
               training and support, and upcoming news.
             </ParagraphText>
-            <ParagraphText>
-              <ul>
-                <li>Project Management</li>
-                <li>UX Research</li>
-                <li>UX/UI Design</li>
-              </ul>
-            </ParagraphText>
+            <UnorderedList>
+              <li>Project Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
             <Button
               size="medium"
               variant="outlined"
@@ -104,6 +97,52 @@ class ProjectSection extends Component {
             >
               See My Process
             </Button>
+          </ContentCol>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg
+              src={require('images/fraserhealth/fh-home-small.png')}
+            />
+          </ContentCol>
+        </IntroContainer>
+        <IntroContainer>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
+            <ProjectHeader>Flexride Car Sharing</ProjectHeader>
+            <ParagraphText>
+              Flexride is a car sharing aggregator mobile app that aims to
+              provide a unified transportation network alternative to commuters.
+            </ParagraphText>
+            <ParagraphText>
+              Won first place in Westminster "Hack Our City" hackathon. (Reach
+              out to learn more!)
+            </ParagraphText>
+            <UnorderedList>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
+          </ContentCol>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg
+              src={require('images/flexride/flexride-project-cover.png')}
+            />
+          </ContentCol>
+        </IntroContainer>
+        <IntroContainer>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
+            <ProjectHeader>SFU Beedie Social Hub</ProjectHeader>
+            <ParagraphText>
+              The SFU Beedie Social Media Hub is a centralized page of all
+              faculty and student related news and social media. It was a place
+              for all SFU Beedie faculty and students to stay updated and
+              connected. (Reach out to learn more!)
+            </ParagraphText>
+            <UnorderedList>
+              <li>Project Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
+          </ContentCol>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/beedie/beedie-home-cover.png')} />
           </ContentCol>
         </IntroContainer>
       </MainContainer>
@@ -122,7 +161,7 @@ const IntroContainer = Row.extend`
   flex-direction: row;
   align-items: center;
   margin-top: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
-  margin-bottom: ${props => (props.theme.isMobile ? '12pt' : '42pt')};
+  margin-bottom: ${props => (props.theme.isMobile ? '24pt' : '42pt')};
 `;
 
 const ContentCol = Col.extend`
@@ -134,7 +173,7 @@ const ProjectHeader = SectionHeader.extend`
 `;
 
 const ProjectImg = styled.img`
-  margin-left: ${props => (props.theme.isMobile ? '0' : '24pt')};
+  margin-left: ${props => (props.theme.isMobile ? '0' : '0')};
   max-width: ${props => (props.theme.isMobile ? '100%' : '520px')};
 `;
 
