@@ -35,6 +35,7 @@ class ContactProjectSection extends Component {
             <Button
               className={classes.btn}
               size="medium"
+              color="primary"
               onClick={() => {
                 window.open('/portfolio/documents/gloria-zhong-resume.pdf');
               }}

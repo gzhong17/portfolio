@@ -50,6 +50,7 @@ const ProjectLinkContainer = Row.extend`
 const ProjectLinkHeader = SectionHeader.extend`
   margin-left: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '0' : '0')};
+  color: ${props => props.theme.primaryColor};
 `;
 
 const ArrowImg = styled.img`

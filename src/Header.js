@@ -72,6 +72,7 @@ const MenuCol = Col.extend`
 
 const MenuItem = SectionHeader.extend`
   margin: 0;
+  color: ${props => props.theme.primaryColor};
 `;
 
 const styles = theme => ({});

@@ -62,6 +62,7 @@ class ProjectSection extends Component {
             <Button
               className={classes.btn}
               size="medium"
+              color="primary"
               onClick={() => {
                 window.open('http://musers.co');
               }}

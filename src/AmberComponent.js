@@ -58,14 +58,15 @@ exports.SectionHeader = BaseText.withComponent('h1').extend`
   margin:0;
   margin-bottom: 16px;
   font-size:  ${props => (props.theme.isMobile ? '20pt' : '24pt')};
-  color: ${props => props.theme.primaryColor};
+  color: ${props => props.theme.primaryTextColor};
   font-family: ${props => props.theme.fonts.secondaryFont};
 `;
+
 exports.ProjectHeader = BaseText.withComponent('h1').extend`
   margin:0;
   margin-bottom: 16px;
   font-size: ${props => (props.theme.isMobile ? '24pt' : '36pt')};
-  color: ${props => props.theme.primaryColor};
+  color: ${props => props.theme.primaryTextColor};
   font-family: ${props => props.theme.fonts.secondaryFont};
 `;
 
