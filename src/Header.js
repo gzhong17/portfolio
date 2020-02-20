@@ -11,10 +11,10 @@ class Header extends Component {
     return (
       <MainContainer>
         <ContentCol>
-          <HomeLinkText href="/portfolio/" style={{ marginBottom: '0' }}>
+          <HomeLinkText href="/" style={{ marginBottom: '0' }}>
             <LogoImg src={require('images/logo.svg')} />
           </HomeLinkText>
-          <HomeLinkText href="/portfolio/" style={{ marginBottom: '0' }}>
+          <HomeLinkText href="/" style={{ marginBottom: '0' }}>
             <MenuItem>Gloria Zhong</MenuItem>
           </HomeLinkText>
         </ContentCol>

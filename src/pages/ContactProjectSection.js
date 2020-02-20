@@ -37,7 +37,7 @@ class ContactProjectSection extends Component {
               size="medium"
               color="primary"
               onClick={() => {
-                window.open('/portfolio/documents/gloria-zhong-resume.pdf');
+                window.open('/documents/gloria-zhong-resume.pdf');
               }}
             >
               My Resume
