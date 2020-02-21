@@ -122,9 +122,7 @@ class ProjectSection extends Component {
             </UnorderedList>
           </ContentCol>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg
-              src={require('images/flexride/flexride-project-cover.png')}
-            />
+            <ProjectImg src={require('images/flexride/flexride-cover.png')} />
           </ContentCol>
         </IntroContainer>
         <IntroContainer>
