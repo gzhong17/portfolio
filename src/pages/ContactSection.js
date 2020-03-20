@@ -35,7 +35,7 @@ class ContactSection extends Component {
               color="primary"
               size="medium"
               onClick={() => {
-                window.open('mailto:gzhong17@hotmail.com');
+                window.open('mailto:gzhong17@gmail.com');
               }}
             >
               Email Me
