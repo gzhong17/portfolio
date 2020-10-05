@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 // Desktop view
-import App from 'App';
+import App from './App';
 import {
   AboutPage,
   HomePage,
   MusersPage,
   FraserHealthPage,
-  FlexridePage
+  FlexridePage,
 } from 'pages';
 
 const routes = (
