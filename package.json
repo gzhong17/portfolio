@@ -17,16 +17,15 @@
     "mobx": "^3.6.2",
     "mobx-models": "^0.3.10",
     "mobx-react": "^4.1.2",
-    "musefind-core-frontend": "^3.6.11",
     "react": "16.8.6",
     "react-dom": "16.8.1",
     "react-hot-loader": "^4.12.11",
     "react-load-script": "^0.0.6",
     "react-router-dom": "^4.1.2",
     "react-router-hash-link": "^1.2.2",
+    "react-scripts": "^3.4.3",
     "react-styled-flexboxgrid": "^3.1.0",
     "styled-components": "^3.4.10",
-    "webpack": "^4.39.1",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
@@ -38,12 +37,21 @@
     "eject": "react-scripts eject",
     "dev-server": "webpack-dev-server --mode development --config node_modules/"
   },
-  "eslintConfig": {
-    "extends": "./node_modules/musefind-react-scripts/config/eslint/index.js"
-  },
+  "eslintConfig": {},
   "devDependencies": {
-    "musefind-react-scripts": "^2.4.13",
     "node-sass": "^4.14.1",
     "webpack-cli": "^3.3.6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
