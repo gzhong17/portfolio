@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import routes from './router';
 import './index.css';
@@ -8,7 +8,9 @@ import './index.css';
 const rootEl = document.getElementById('root');
 class Root extends Component {
   render() {
-    return <HashRouter basename={process.env.PUBLIC_URL}>{routes}</HashRouter>;
+    return (
+      <BrowserRouter basename={process.env.PUBLIC_URL}>{routes}</BrowserRouter>
+    );
   }
 }
 
