@@ -62,6 +62,14 @@ export const SectionHeader = BaseText.withComponent('h1').extend`
   font-family: ${(props) => props.theme.fonts.secondaryFont};
 `;
 
+export const MenuHeader = BaseText.withComponent('h1').extend`
+  margin:0;
+  margin-bottom: 16px;
+  font-size:  ${(props) => (props.theme.isMobile ? '20pt' : '20pt')};
+  color: ${(props) => props.theme.primaryTextColor};
+  font-family: ${(props) => props.theme.fonts.secondaryFont};
+`;
+
 export const ProjectHeader = BaseText.withComponent('h1').extend`
   margin:0;
   margin-bottom: 16px;

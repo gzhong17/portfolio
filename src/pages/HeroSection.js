@@ -18,12 +18,11 @@ class HeroSection extends Component {
     return (
       <MainContainer>
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={6} md={6} sm={12} xs={12}>
+          <ContentCol lgOffset={1} lg={5} md={6} sm={12} xs={12}>
             <TitleHeader>Hi there, I'm Gloria</TitleHeader>
             <SecondaryHeader>Empathetic Problem Solver</SecondaryHeader>
             <HeroParagraph>
-              Working in UX for the past 6 years, I’ve been passionate about
-              translating user data into valuable solutions, through the lens of
+              I'm passionate about translating user data into business measurable solutions, through the lens of
               empathy and critical thinking.
             </HeroParagraph>
             <Button
@@ -36,23 +35,23 @@ class HeroSection extends Component {
               Who's Gloria?
             </Button>
           </ContentCol>
-          <ContentCol lg={5} md={6} sm={12} xs={12}>
+          {/* <ContentCol lgOffset={1} lg={5} md={6} sm={12} xs={12}>
             <PortraitImg
-              src={require('images/self-portrait-circle-mono.png')}
+              src={require('images/self-portrait-colour.png')}
             />
-          </ContentCol>
+          </ContentCol> */}
         </IntroContainer>
-        <UpcomingContainer>
+        {/* <UpcomingContainer>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
             <SecondaryHeader>See What I'm Working On Lately</SecondaryHeader>
           </ContentCol>
           <ContentCol lg={12} md={12} sm={12} xs={12}>
-            <ArrowImg src={require('images/arrow.svg')} />
+            <ArrowImg src={require('images/arrow.svg')} /> */}
             {/* <IconButton color="primary"> */}
             {/* <ArrowDownwardIcon style={{ fill: 'primary' }} /> */}
             {/* </IconButton> */}
-          </ContentCol>
-        </UpcomingContainer>
+          {/* </ContentCol>
+        </UpcomingContainer> */}
       </MainContainer>
     );
   }
@@ -88,7 +87,7 @@ const ContentCol = Col.extend`
 
 const PortraitImg = styled.img`
   margin-left: ${props => (props.theme.isMobile ? '0' : '24pt')};
-  width: ${props => (props.theme.isMobile ? '100%' : '400px')};
+  width: ${props => (props.theme.isMobile ? '100%' : '250px')};
 `;
 const ArrowImg = styled.img`
   width: ${props => (props.theme.isMobile ? '50px' : '50px')};
