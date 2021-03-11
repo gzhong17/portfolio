@@ -17,19 +17,24 @@ class FraserHealthPage extends Component {
     return (
       <MainContainer>
         <Header />
+        <BodyContainer>
         <FraserHealthDetails />
         <MoreProjectSection />
         <ContactProjectSection />
+        </BodyContainer>
       </MainContainer>
     );
   }
 }
 
 const MainContainer = Base.extend`
-  background-color: ${props => props.theme.whiteColor};
-  display: flex;
-  flex-direction: column;
-  margin: ${props => (props.theme.isMobile ? '16px' : '40px')};
+background-color: ${props => props.theme.whiteColor};
+display: flex;
+flex-direction: column;
+`;
+
+const BodyContainer = Base.extend`
+margin: ${props => (props.theme.isMobile ? '0 16px 16px 16px' : '0 40px 40px 40px')};
 `;
 
 const styles = theme => ({});

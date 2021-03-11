@@ -18,7 +18,7 @@ class HeroSection extends Component {
     return (
       <MainContainer>
         <IntroContainer>
-          <ContentCol lgOffset={1} lg={5} md={6} sm={12} xs={12}>
+          <ContentCol lgOffset={1} lg={7} md={6} sm={12} xs={12}>
             <TitleHeader>Hi there, I'm Gloria</TitleHeader>
             <SecondaryHeader>Empathetic Problem Solver</SecondaryHeader>
             <HeroParagraph>
@@ -35,11 +35,11 @@ class HeroSection extends Component {
               Who's Gloria?
             </Button>
           </ContentCol>
-          {/* <ContentCol lgOffset={1} lg={5} md={6} sm={12} xs={12}>
+          <ContentCol lg={4} md={6} sm={12} xs={12}>
             <PortraitImg
               src={require('images/self-portrait-colour.png')}
             />
-          </ContentCol> */}
+          </ContentCol>
         </IntroContainer>
         {/* <UpcomingContainer>
           <ContentCol lg={12} md={12} sm={12} xs={12}>

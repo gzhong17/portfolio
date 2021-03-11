@@ -21,7 +21,6 @@ const MainContainer = Base.extend`
   background-color: ${props => props.theme.whiteColor};
   display: flex;
   flex-direction: column;
-
 `;
 
 const BodyContainer = Base.extend`

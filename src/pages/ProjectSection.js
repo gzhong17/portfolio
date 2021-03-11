@@ -59,7 +59,7 @@ class ProjectSection extends Component {
             >
               See My Process
             </Button>
-            <Button
+            {/* <Button
               className={classes.btn}
               size="medium"
               color="primary"
@@ -68,7 +68,7 @@ class ProjectSection extends Component {
               }}
             >
               See It In Action
-            </Button>
+            </Button> */}
           </ContentCol>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
             <ProjectImg src={require('images/musers/musers-sample.png')} />

@@ -130,6 +130,7 @@ export const UnorderedList = BaseText.withComponent('ul').extend`
   line-height: 160%;
   color: ${(props) => props.theme.primaryTextColor};
   font-family: ${(props) => props.theme.fonts.primaryFont};
+  margin-bottom: 16px;
 `;
 
 export const OrderedList = BaseText.withComponent('ol').extend`
@@ -137,4 +138,5 @@ export const OrderedList = BaseText.withComponent('ol').extend`
   line-height: 160%;
   color: ${(props) => props.theme.primaryTextColor};
   font-family: ${(props) => props.theme.fonts.primaryFont};
+  margin-bottom: 16px;
 `;
