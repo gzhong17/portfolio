@@ -68,6 +68,11 @@ export const MenuHeader = BaseText.withComponent('h1').extend`
   font-size:  ${(props) => (props.theme.isMobile ? '20pt' : '20pt')};
   color: ${(props) => props.theme.primaryTextColor};
   font-family: ${(props) => props.theme.fonts.secondaryFont};
+
+  :hover {
+		color: ${props => props.theme.primary.dark};
+		cursor: pointer;
+	}
 `;
 
 export const ProjectHeader = BaseText.withComponent('h1').extend`

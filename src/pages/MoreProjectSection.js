@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Base, SectionHeader } from 'AmberComponent';
+import { Base, MenuHeader } from 'AmberComponent';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { withRouter } from 'react-router-dom';
 import { Row, Col } from 'react-styled-flexboxgrid';
@@ -47,7 +47,7 @@ const ProjectLinkContainer = Row.extend`
   align-items: center;
 `;
 
-const ProjectLinkHeader = SectionHeader.extend`
+const ProjectLinkHeader = MenuHeader.extend`
   margin-left: ${props => (props.theme.isMobile ? '12pt' : '12pt')};
   margin-bottom: ${props => (props.theme.isMobile ? '0' : '0')};
   color: ${props => props.theme.primaryColor};
