@@ -17,6 +17,81 @@ class ProjectSection extends Component {
 
     return (
       <MainContainer id="projects">
+        {/* <IntroContainer>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
+          <ProjectImg src={require('images/goodbits/goodbits-cover.png')} />
+            <ProjectHeader>Goodbits Newsletter Builder</ProjectHeader>
+            <ParagraphText>
+              Goodbits is a newsletter curation and editor tool that transforms avid readers &amp; writers into thought leaders.
+            </ParagraphText>
+            <UnorderedList>
+              <li>Product Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList> */}
+            {/* <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                history.push('/goodbits');
+              }}
+            >
+              See My Process
+            </Button> */}
+            
+          {/* </ContentCol> */}
+          {/* <ContentCol lg={5} md={5} sm={11} xs={12}>
+            <ProjectImg src={require('images/musers/musers-cover.png')} />
+            <ProjectHeader>Musers by MuseFind</ProjectHeader>
+            <ParagraphText>
+              Musers is an online influencer portfolio platform, where
+              influencers can fully showcase their professionalism and value.
+            </ParagraphText>
+            <UnorderedList>
+              <li>Product Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
+            <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                history.push('/musers');
+              }}
+            >
+              See My Process
+            </Button>
+          </ContentCol>
+        </IntroContainer> */}
+
+        <IntroContainer>
+          <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
+            <ProjectHeader>Goodbits Newsletter Builder</ProjectHeader>
+            <ParagraphText>
+              Goodbits is a newsletter curation and editor tool that transforms avid readers &amp; writers into thought leaders.
+            </ParagraphText>
+            <UnorderedList>
+              <li>Product Management</li>
+              <li>UX Research</li>
+              <li>UX/UI Design</li>
+            </UnorderedList>
+            {/* <Button
+              size="medium"
+              variant="outlined"
+              color="primary"
+              onClick={() => {
+                history.push('/goodbits');
+              }}
+            >
+              See My Process
+            </Button> */}
+          </ContentCol>
+          <ContentCol lg={6} md={6} sm={12} xs={12}>
+            <ProjectImg src={require('images/goodbits/goodbits-cover.png')} />
+          </ContentCol>
+        </IntroContainer>
         <IntroContainer>
           <ContentCol lgOffset={1} lg={5} md={5} sm={11} xs={12}>
             <ProjectHeader>Musers by MuseFind</ProjectHeader>
@@ -71,7 +146,7 @@ class ProjectSection extends Component {
             </Button> */}
           </ContentCol>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg src={require('images/musers/musers-sample.png')} />
+            <ProjectImg src={require('images/musers/musers-cover.png')} />
           </ContentCol>
         </IntroContainer>
         <IntroContainer>
@@ -101,7 +176,7 @@ class ProjectSection extends Component {
           </ContentCol>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
             <ProjectImg
-              src={require('images/fraserhealth/fh-home-small.png')}
+              src={require('images/fraserhealth/fraserhealth-cover.png')}
             />
           </ContentCol>
         </IntroContainer>
@@ -141,7 +216,7 @@ class ProjectSection extends Component {
             </UnorderedList>
           </ContentCol>
           <ContentCol lg={6} md={6} sm={12} xs={12}>
-            <ProjectImg src={require('images/beedie/beedie-home-cover.png')} />
+            <ProjectImg src={require('images/beedie/beedie-cover.png')} />
           </ContentCol>
         </IntroContainer>
       </MainContainer>

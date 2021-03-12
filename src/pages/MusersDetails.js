@@ -31,7 +31,7 @@ class MusersDetails extends Component {
               work experiences, and services. This platform aims to help them
               communicate immediate value and professionalism.
             </ParagraphText>
-            <Button
+            {/* <Button
               className={classes.btn}
               size="medium"
               color="primary"
@@ -40,10 +40,10 @@ class MusersDetails extends Component {
               }}
             >
               See It In Action
-            </Button>
+            </Button> */}
           </ContentCol>
           <ContentCol lgOffset={1} lg={7} md={8} sm={12} xs={12}>
-            <ProjectHeroImg src={require('images/musers/musers-sample.png')} />
+            <ProjectHeroImg src={require('images/musers/musers-cover.png')} />
           </ContentCol>
         </SectionContainer>
         <SectionContainer>

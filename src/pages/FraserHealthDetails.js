@@ -36,7 +36,7 @@ class FraserHealthDetails extends Component {
           </ContentCol>
           <ContentCol lgOffset={1} lg={7} md={8} sm={12} xs={12}>
             <ProjectHeroImg
-              src={require('images/fraserhealth/fh-home-small.png')}
+              src={require('images/fraserhealth/fraserhealth-cover.png')}
             />
           </ContentCol>
         </SectionContainer>
